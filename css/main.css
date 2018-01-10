@@ -144,13 +144,13 @@ ytd-expander[collapsed]>#content.ytd-expander {
     margin-right: 5px;
 }
 
-@media only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (device-pixel-ratio: 2) {
     .btn:before {
         content: url('../img/unlike@2x.png');
     }
 }
 
-@media only screen and (min-device-pixel-ratio: 3) {
+@media only screen and (device-pixel-ratio: 3) {
     .btn:before {
         content: url('../img/unlike@3x.png');
     }
@@ -167,13 +167,13 @@ ytd-expander[collapsed]>#content.ytd-expander {
     margin-right: 5px;
 }
 
-@media only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (device-pixel-ratio: 2) {
     .btn.selected:before {
         content: url('../img/like@2x.png');
     }
 }
 
-@media only screen and (min-device-pixel-ratio: 3) {
+@media only screen and (device-pixel-ratio: 3) {
     .btn.selected:before {
         content: url('../img/like@3x.png');
     }
@@ -190,13 +190,13 @@ ytd-expander[collapsed]>#content.ytd-expander {
     content: url('../img/edit.png');
 }
 
-@media only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (device-pixel-ratio: 2) {
     .btn.btn-default:before {
         content: url('../img/edit@2x.png');
     }
 }
 
-@media only screen and (min-device-pixel-ratio: 3) {
+@media only screen and (device-pixel-ratio: 3) {
     .btn.btn-default:before {
         content: url('../img/edit@2x.png');
     }
