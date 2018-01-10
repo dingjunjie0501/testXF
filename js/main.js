@@ -1,7 +1,7 @@
 $(function () {
     if (window.devicePixelRatio > 1) {
         var images = $('#wx-background');
-        var lowres = images.attr('src', highres);
+        var lowres = images.attr('src');
         var highres = lowres.replace(".", "@2x.");
         alert(highres);
         $(images).attr('src', highres);
