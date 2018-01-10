@@ -4,6 +4,7 @@ $(function () {
         var images = $('#wx-background');
         var lowres = images.attr('src', highres);
         var highres = lowres.replace(".", "@2x.");
+        alert(highres);
         $(images).attr('src', highres);
     }
 
