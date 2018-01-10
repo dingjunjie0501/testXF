@@ -1,0 +1,258 @@
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.body {
+    font-family: PingFangSC-Regular;
+    margin: 0;
+    padding: 0;
+}
+
+.hd {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    width: calc(100%);
+}
+
+.hd img {
+    display: block;
+    width: 100%;
+}
+
+.bd {
+    height: auto;
+    /* padding-bottom: 30px; */
+    padding-bottom: 59px;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 7%, #f5f5f5 100%)
+}
+
+.bd:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #5b0106 0%, #550f5f 48%, #061f96 55%, #001f69 100%)
+}
+
+.card {
+    margin: 10px;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    background: #fff;
+}
+
+.card ul {
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    font-size: 14px;
+    color: #333333;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.content .card:first-child {
+    margin-top: 0;
+}
+
+.card-content {
+    padding: 10px 14px;
+}
+
+.wx-user {
+    line-height: 20px;
+    position: relative;
+    min-height: 110px;
+    padding: 0 100px 0 0;
+    word-wrap: break-word;
+}
+
+.wx-user img {
+    width: 86px;
+    height: 110px;
+    position: absolute;
+    right: 0;
+}
+
+.wx-user ul li {
+    line-height: 28px;
+}
+
+paper-button {
+    display: block;
+    text-align: right;
+    color: #073CA6;
+}
+
+paper-button[hidden] {
+    display: none;
+}
+
+.wx-user-detail {
+    --ytd-expander-collapsed-height: 130px;
+    display: block;
+}
+
+ytd-expander {
+    display: block;
+}
+
+ytd-expander[collapsed]>#content.ytd-expander {
+    overflow: hidden;
+    max-height: var(--ytd-expander-collapsed-height);
+}
+
+#content-text.ytd-comment-renderer {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+}
+
+[hidden].ytd-expander {
+    display: none !important;
+}
+
+.btn {
+    padding: 5px 16px 0;
+    background: #073CA6;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.btn:before {
+    content: url('../img/unlike.png');
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@media only screen and (min-device-pixel-ratio: 2) {
+    .btn:before {
+        content: url('../img/unlike@2x.png');
+    }
+}
+
+@media only screen and (min-device-pixel-ratio: 3) {
+    .btn:before {
+        content: url('../img/unlike@3x.png');
+    }
+}
+
+.btn.selected {
+    background: #BBBBBB;
+}
+
+.btn.selected:before {
+    content: url('../img/like.png');
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@media only screen and (min-device-pixel-ratio: 2) {
+    .btn.selected:before {
+        content: url('../img/like@2x.png');
+    }
+}
+
+@media only screen and (min-device-pixel-ratio: 3) {
+    .btn.selected:before {
+        content: url('../img/like@3x.png');
+    }
+}
+
+.btn.btn-default {
+    background: none;
+    color: #073CA6;
+    padding: 0;
+    border: 0;
+}
+
+.btn.btn-default:before {
+    content: url('../img/edit.png');
+}
+
+@media only screen and (min-device-pixel-ratio: 2) {
+    .btn.btn-default:before {
+        content: url('../img/edit@2x.png');
+    }
+}
+
+@media only screen and (min-device-pixel-ratio: 3) {
+    .btn.btn-default:before {
+        content: url('../img/edit@2x.png');
+    }
+}
+
+.vote {
+    line-height: 20px;
+    margin: 12px 0;
+}
+
+.vote-tip {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #073CA6;
+    margin-left: 8px;
+}
+
+.vote-count {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    float: right;
+    line-height: 30px;
+}
+
+.vote-text {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.like {
+    background-image: image-set( url('../img/unlike.png') 1x, url('../img/unlike@2x.png') 2x, url('../img/unlike@x.png') 3x);
+    background-size: 32px 27px;
+    position: relative;
+}
+
+.li-line {
+    height: 1px;
+    background: #EEEEEE;
+    position: relative;
+    width: calc(100% + 28px);
+    margin-left: -14px;
+}
+
+.xf-footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 59px;
+    z-index: 31;
+    bottom: 0;
+    left: 0;
+}
+
+.xf-footer .card {
+    background: #073CA6;
+    color: #fff;
+    padding: 10px 0;
+}

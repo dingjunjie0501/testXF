@@ -1,0 +1,223 @@
+html {
+    margin: 0;
+    padding: 0;
+    /* width: 1920px;
+    overflow-x: hidden; */
+}
+
+.body {
+    font-family: PingFangSC-Regular;
+    margin: 0;
+    padding: 0;
+    /* width: 1920px; */
+}
+
+.hd {
+    /* background: url('../img/background.jpg') center center no-repeat;
+    width: 1920px;
+    height: 400px; */
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+
+/**/
+
+.hd img {
+    display: block;
+    width: 100%;
+}
+
+.bd {
+    /* width: 1920px; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 120px;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 7%, #f5f5f5 100%)
+}
+
+.bd:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #5b0106 0%, #550f5f 48%, #061f96 55%, #001f69 100%)
+}
+
+.content {
+    background: #FFFFFF;
+    border-radius: 4px;
+    /* width: 1200px; */
+    width: 62.5%;
+    height: auto;
+    margin: auto;
+}
+
+.content-1 {
+    padding: 20px 40px;
+}
+
+.content-1 ul,
+.content-2 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.content-1 li {
+    font-size: 14px;
+    color: #333333;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.content-line {
+    width: 100%;
+    height: 2px;
+    background: #073CA6;
+}
+
+.content-2 {
+    padding: 0 40px 40px;
+}
+
+.content-2 .li-1 {
+    font-size: 18px;
+    color: #333333;
+    list-style-type: none;
+    line-height: 25px;
+    position: relative;
+    min-height: 200px;
+    padding: 40px 196px 40px 0;
+    word-wrap: break-word;
+}
+
+.content-2 .li-1 img {
+    position: absolute;
+    width: 156px;
+    height: 200px;
+    top: 40px;
+    right: 0;
+}
+
+.content-2 .li-1 p {
+    margin: 20px 0;
+}
+
+.user {
+    padding: 0;
+    margin: 0;
+}
+
+.user:after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.user li {
+    list-style-type: none;
+    width: 33.3%;
+    float: left;
+}
+
+.li-1 p:last-child {
+    margin-bottom: 0;
+}
+
+.li-1 a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 5px 16px 0;
+    background: #073CA6;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.btn:before {
+    content: url('../img/unlike.png');
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn.selected {
+    background: #BBBBBB;
+}
+
+.btn.selected:before {
+    content: url('../img/like.png');
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.vote {
+    line-height: 20px;
+}
+
+.vote-tip {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #073CA6;
+    margin-left: 15px;
+}
+
+.vote-count {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    float: right;
+    line-height: 30px;
+}
+
+.like {
+    background-image: url('../img/unlike.png');
+    background-size: 32px 27px;
+    position: relative;
+}
+
+.li-line {
+    height: 2px;
+    background: #DDDDDD;
+    position: relative;
+    bottom: -40px;
+    margin-right: -196px;
+}
+
+.vote-text {
+    /* width: 902px; */
+    width: calc(100% - 20px);
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #BBBBBB;
+    font-size: 14px;
+    resize: none;
+}
+
+.rank {
+    background: url(../img/rank.png) center center no-repeat;
+    width: 28px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
